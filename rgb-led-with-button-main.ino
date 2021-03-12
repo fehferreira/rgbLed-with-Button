@@ -82,11 +82,16 @@ void testaBotao(void){
   }
 }
 
+void incrementaAutomaticamente(){
+  estadoLuzes = estadoLuzes + 1;
+  delay(1000);
+}
+
 void loop()
 {  
-  
-  //Chama função de teste de botão
-  testaBotao();
+
+  //Chama uma função de mudança de cor automática
+  incrementaAutomaticamente();
   
   //testa o estadoLuzes para o valor que ele armazenar
   switch(estadoLuzes){
